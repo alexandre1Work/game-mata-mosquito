@@ -14,7 +14,7 @@ body {
     body {
         background-image: url('imagens/bg_desktop.jpg');
         background-repeat: no-repeat;
-        background-size: 100% auto; 
+        background-size: 100%; 
     }
 }
 
@@ -35,4 +35,29 @@ body {
 
 .ladoB{
     transform: scaleX(-1);
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #ffffff;
+    background-color: #fff;
+    opacity: 0.7;
+    display: grid; /* Torna o container flexível */
+    gap: 10px; /* Espaço entre os itens */
+    grid-template-rows: 40px 40px; /* define grid com duas linhas, poderia ter colunas tbm com 'colunm' */
+}
+
+.vidas {
+    justify-self: center; 
+    /* Alinha este item verticalmente ao centro */
+}
+
+.cronometro {
+
+    font-size: 20px;
+    font-weight: bold;
 }
