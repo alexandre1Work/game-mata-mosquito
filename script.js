@@ -2,7 +2,7 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
-var tempo = 10;
+var tempo = 30;
 var criarMosquitoTempo = 1500
 
 // nivel do jogo
