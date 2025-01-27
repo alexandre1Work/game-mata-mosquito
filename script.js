@@ -3,6 +3,19 @@ var altura = 0;
 var largura = 0;
 var vidas = 1;
 var tempo = 10;
+var criarMosquitoTempo = 1500
+
+// nivel do jogo
+var nivel = window.location.search //recupera o parametro pela url
+nivel = nivel.replace('?', '');
+
+if(nivel === 'normal') {
+    criarMosquitoTempo = 1500;
+} else if (nivel === 'dificil') {
+    criarMosquitoTempo = 1000;
+} else if (nivel === 'impossivel'){
+    criarMosquitoTempo = 750;
+}
 
 //definindo dimensões do jogo, variaveis recolhendo o tamanho atual da janela do navegador
 function ajustarTamanhoPalcoJogo() {
@@ -13,14 +26,14 @@ function ajustarTamanhoPalcoJogo() {
 ajustarTamanhoPalcoJogo();
 window.addEventListener('resize', ajustarTamanhoPalcoJogo); //permite reajuste no tamanho da janela do navegador
 
-//cronometro 
+//cronometro
 //exibindo o valor antes de entrar no setInerval
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('cronometro').innerHTML = tempo;
 });
 
 var cronometro = setInterval(function() {
-    
+
     tempo -= 1
 
     if (tempo < 0) {
@@ -72,7 +85,7 @@ function criarMosquito() {
 
         //se remover o anterior é pq não clicou, então, retira uma vida
         if (vidas > 3) {
-            
+
             window.location.href = 'fim_de_jogo.html'
 
         } else {
@@ -81,7 +94,7 @@ function criarMosquito() {
             vidas++
         }
     }
-    
+
     //atribuindo as variaveis dos eixos, as posições aleatórias
     var posicaoX = gerarPosicao(largura);
     var posicaoY = gerarPosicao(altura);
@@ -109,10 +122,10 @@ function criarMosquito() {
     document.body.appendChild(mosquito);
 }
 
-//gerando o mosquito a cada 2s
+// //gerando o mosquito a cada 2s
 var criaMosquito = setInterval( () => {
     criarMosquito()
-}, 2000);
+}, criarMosquitoTempo);
 
 
 

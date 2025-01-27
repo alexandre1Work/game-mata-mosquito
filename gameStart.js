@@ -7,15 +7,14 @@ selectNivel.addEventListener('change', function() {
     selectButton.classList.remove('btn1', 'btn2', 'btn3');
 
     const nivelSelecionado = this.value;
+    console.log(nivelSelecionado);  // Debugging
 
     if (nivelSelecionado === 'normal'){
         this.classList.add('nivel1');
         selectButton.classList.add('btn1');
-
     } else if (nivelSelecionado === 'dificil') {
         this.classList.add('nivel2');
         selectButton.classList.add('btn2');
-
     } else if (nivelSelecionado === 'impossivel') {
         this.classList.add('nivel3');
         selectButton.classList.add('btn3');
@@ -28,11 +27,16 @@ selectNivel.addEventListener('change', function() {
 
 });
 
+document.getElementById('iniciar').addEventListener('click', iniciarJogo);
+
 function iniciarJogo() {
     var nivel = document.getElementById('nivel').value
     
-    if (nivel === ''){
+    if (nivel === '') {
         alert('Selecione um nível para iniciar o jogo')
         return false;
-    }
+    } 
+
+    window.location.href = 'app.html?' + nivel
+
 }
