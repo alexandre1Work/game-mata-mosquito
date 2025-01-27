@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Você Venceu!</title>
+</head>
+<body>
+    
+    <!-- Imagem GameOver -->
+    <div class="container">
+        <img src="imagens/game.png" alt="Imagem de Game Over">
+
+        <div>
+            <select action="" class="nivel" id="nivel">
+                <option value="">-- Selecione o nível --</option>
+                <option value="normal">Normal</option>
+                <option value="dificil">Difícil</option>
+                <option value="impossivel">Impossível</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="button" class="btn-start" id="iniciar" onclick="iniciarJogo()"> Iniciar jogo </button>
+        </div>
+    </div>
+
+    <script src="gameStart.js"></script>
+</body>
+</html>

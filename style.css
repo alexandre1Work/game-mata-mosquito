@@ -58,7 +58,7 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center;    
-  height: 100vh;          
+  height: 90vh;          
   flex-direction: column;
 }
 
@@ -106,4 +106,94 @@ body {
     outline-color: rgb(0,191,255);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #2c68e0; 
+}
+
+.btn-start {
+    width: 185px;
+    height: 65px;
+    border: 0 solid;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: bold;
+    border-radius: 8px;
+    box-shadow: inset 0 0 40px rgb(183, 183, 180);
+    outline: 2px solid;
+    outline-color: rgb(183, 183, 180);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+  
+  .btn-start:hover {
+    box-shadow: inset 0 0 40px rgb(136, 136, 135), 0 0 20px rgb(136, 136, 135);
+    outline-color: rgb(136, 136, 135);
+    text-shadow: 1px 1px 2px #255,140,0; 
+}
+
+/* Estilos para o select de níveis */
+.nivel {
+    width: 280px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: bold;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: inset 0 0 40px rgb(183, 183, 180);
+    outline-color: rgb(183, 183, 180);
+}
+
+.nivel1 {
+    box-shadow: inset 0 0 40px rgb(50,205,50);
+    outline-color: rgb(50,205,50);
+}
+
+.btn1 {
+    box-shadow: inset 0 0 40px rgb(50,205,50);
+    outline-color: rgb(50,205,50);
+}
+
+.btn1:hover {
+    box-shadow: inset 0 0 40px rgb(50,205,50), 0 0 20px rgb(50,205,50);
+    outline-color: rgb(34, 204, 34);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px rgb(59, 222, 5),140,0; 
+}
+
+.nivel2 {
+    box-shadow: inset 0 0 40px rgb(255, 111, 0);
+    outline-color: rgb(255, 111, 0);
+}
+
+.btn2 {
+    box-shadow: inset 0 0 40px rgb(255, 111, 0);
+    outline-color: rgb(255, 111, 0);
+}
+
+.btn2:hover {
+    box-shadow: inset 0 0 40px rgb(255, 111, 0), 0 0 20px rgb(255, 111, 0);
+    outline-color: rgb(255, 111, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px rgb(227, 104, 10),140,0; 
+}
+
+
+.nivel3 {
+    box-shadow: inset 0 0 40px rgb(255, 0, 0);
+    outline-color: rgb(255, 0, 0);
+}
+
+.btn3 {
+    box-shadow: inset 0 0 40px rgb(255, 0, 0);
+    outline-color: rgb(255, 0, 0);
+}
+
+.btn3:hover {
+    box-shadow: inset 0 0 40px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0);
+    outline-color: rgb(255, 0, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0),140,0; 
 }

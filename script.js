@@ -15,7 +15,10 @@ window.addEventListener('resize', ajustarTamanhoPalcoJogo); //permite reajuste n
 
 //cronometro 
 //exibindo o valor antes de entrar no setInerval
-document.getElementById('cronometro').innerHTML = tempo;
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('cronometro').innerHTML = tempo;
+});
+
 var cronometro = setInterval(function() {
     
     tempo -= 1
