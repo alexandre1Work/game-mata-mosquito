@@ -2,16 +2,33 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
+var tempo = 10;
 
 //definindo dimensões do jogo, variaveis recolhendo o tamanho atual da janela do navegador
 function ajustarTamanhoPalcoJogo() {
     altura = window.innerHeight;
     largura = window.innerWidth
-    console.log(altura, largura)
 }
 
 ajustarTamanhoPalcoJogo();
 window.addEventListener('resize', ajustarTamanhoPalcoJogo); //permite reajuste no tamanho da janela do navegador
+
+//cronometro 
+//exibindo o valor antes de entrar no setInerval
+document.getElementById('cronometro').innerHTML = tempo;
+var cronometro = setInterval(function() {
+    
+    tempo -= 1
+
+    if (tempo < 0) {
+        clearInterval(cronometro); // Para o cronômetro quando chega a 0
+        clearInterval(criaMosquito);
+        window.location.href = 'vitoria.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo;
+    }
+
+}, 1000);
 
 //atribuindo uma classe aleatoria ao elemento (px do mosquito)
 function tamanhoMosquito() {
@@ -50,9 +67,11 @@ function criarMosquito() {
     if (mosquito) {
         mosquito.remove();
 
-        //se remover o anterior é pq não clicou, então, retira uam vida
+        //se remover o anterior é pq não clicou, então, retira uma vida
         if (vidas > 3) {
-            alert('Você perdeu');
+            
+            window.location.href = 'fim_de_jogo.html'
+
         } else {
             document.getElementById('v' + vidas).src="imagens/coracao_vazio.png"
 
@@ -87,8 +106,8 @@ function criarMosquito() {
     document.body.appendChild(mosquito);
 }
 
-//gerando o mosquito a cada 1s
-setInterval( () => {
+//gerando o mosquito a cada 2s
+var criaMosquito = setInterval( () => {
     criarMosquito()
 }, 2000);
 

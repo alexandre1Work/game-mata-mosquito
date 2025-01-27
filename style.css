@@ -4,18 +4,10 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 784px) {
-    body {
-        background-color: #4ade80;
-    }
-}
-
-@media (min-width: 785px) {
-    body {
-        background-image: url('imagens/bg_desktop.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%; 
-    }
+body {
+    background-image: url('imagens/bg_desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; 
 }
 
 .mosquito1{
@@ -60,4 +52,58 @@ body {
 
     font-size: 20px;
     font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+  flex-direction: column;
+}
+
+.btn-lose {
+    width: 185px;
+    height: 65px;
+    border: 0 solid;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: bold;
+    border-radius: 8px;
+    box-shadow: inset 0 0 40px rgb(255, 0, 0);
+    outline: 2px solid;
+    outline-color: rgb(255, 0, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+  
+  .btn-lose:hover {
+    box-shadow: inset 0 0 40px rgb(30,144,255), 0 0 20px rgb(173,216,230);
+    outline-color: rgb(0,191,255);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #2c68e0; 
+}
+
+.btn-win {
+    width: 185px;
+    height: 65px;
+    border: 0 solid;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: bold;
+    border-radius: 8px;
+    box-shadow: inset 0 0 40px rgb(50,205,50);
+    outline: 2px solid;
+    outline-color: rgb(50,205,50);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+  
+  .btn-win:hover {
+    box-shadow: inset 0 0 40px rgb(30,144,255), 0 0 20px rgb(173,216,230);
+    outline-color: rgb(0,191,255);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #2c68e0; 
 }
