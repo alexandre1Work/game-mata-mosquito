@@ -2,6 +2,14 @@
 
 Um jogo divertido e desafiador onde o objetivo é matar os mosquitos antes que o tempo acabe! Escolha entre três níveis de dificuldade e teste seus reflexos!
 
+## 📸 
+
+<div style="display: flex;">
+  <img src="imagens/readme/home.png" alt="Imagem 1" style="width: 30%; margin-right: 10px;">
+  <img src="imagens/readme/jogo.png" alt="Imagem 2" style="width: 30%;">
+    <img src="imagens/readme/gameOver.png" alt="Imagem 4" style="width: 30%;">
+</div>
+
 ## 🚀 Funcionalidades
 
 - Três níveis de dificuldade: **Normal, Difícil e Impossível**
@@ -22,14 +30,6 @@ Um jogo divertido e desafiador onde o objetivo é matar os mosquitos antes que o
 2. Clique nos mosquitos que aparecem na tela antes que escapem
 3. Se deixar passar muitos mosquitos, perderá vidas
 4. O objetivo é sobreviver até o tempo acabar!
-
-## 📸 
-
-<div style="display: flex;">
-  <img src="imagens/readme/home.png" alt="Imagem 1" style="width: 33%; margin-right: 10px;">
-  <img src="imagens/readme/jogo.png" alt="Imagem 2" style="width: 33%;">
-    <img src="imagens/readme/gameOver.png" alt="Imagem 4" style="width: 33%;">
-</div>
 
 ## 📌 Como Executar o Projeto
 
