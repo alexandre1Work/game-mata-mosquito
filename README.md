@@ -2,6 +2,8 @@
 
 Um jogo divertido e desafiador onde o objetivo é matar os mosquitos antes que o tempo acabe! Escolha entre três níveis de dificuldade e teste seus reflexos!
 
+🎮 **[Clique aqui para jogar!](https://gamemosquito.netlify.app/)**
+
 ## 📸 
 
 <div style="display: flex;">
