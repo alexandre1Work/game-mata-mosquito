@@ -4,6 +4,7 @@ Um jogo divertido e desafiador onde o objetivo é matar os mosquitos antes que o
 
 🎮 **[Clique aqui para jogar!](https://gamemosquito.netlify.app/)**
 
+---
 ## 📸 
 
 <div style="display: flex;">
